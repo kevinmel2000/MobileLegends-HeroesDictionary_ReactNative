@@ -48,7 +48,7 @@ export default class tabTwo extends Component{
         {this.renderHeader()}
         <Content>
           <List>
-            {this.state.heroes.map((hero, key)=> <Heroes key={key} hero={hero}/>)}
+            {this.state.heroes.map((hero, key)=> <Heroes key={key} hero={hero} {...this.props} />)}
           </List>
         </Content>
       </Container>

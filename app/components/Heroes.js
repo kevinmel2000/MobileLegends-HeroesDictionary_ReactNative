@@ -3,7 +3,9 @@ import {ListItem, Thumbnail, Body, Text} from 'native-base';
 
 export default Heroes = (props) => (
   <ListItem 
-    onPress={()=>props.navigation.navigate("HeroView", {name: props.hero.name})}
+    onPress={() => props.navigation.navigate("DetailHero", {
+              detail: props.hero,
+            })}
   >
     <Thumbnail 
       square 
